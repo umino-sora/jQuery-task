@@ -60,8 +60,7 @@ for (i = 0; i < animals.length; i++) {
 alert(animal_weight);
 
 // 課題8
-function square(radius) {
-  return radius * radius;
+function area(radius) {
+    return radius * radius * 3.14
 }
-var area = square(5) * 3.14;
-alert(area);
+alert(area(5));
