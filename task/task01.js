@@ -1,17 +1,11 @@
-// 課題1
+// 課題1、2
 var answer = prompt('正もしくは負の値を入力してください');
-if (answer >= 0) {
-    alert('正の数です');
-} else {
-    alert('負の数です');
-}
-
-// 課題2
-var answer = prompt('正もしくは負の値を入力してください');
-if (answer >= 0) {
+if (answer > 0) {
     alert('正の数です');
 } else if (answer < 0) {
     alert('負の数です');
+} else if (answer == 0) {
+    alert('0です');
 } else {
     alert('数値を入力してください');
 }
@@ -58,6 +52,22 @@ for (i = 0; i < animals.length; i++) {
     }
 }
 alert(animal_weight);
+
+/* in演算子 使用ver.
+var animals = [
+    {'name': 'パンダ', 'weight': '80'},
+    {'name': 'ライオン', 'weight': '200'},
+    {'name': 'キリン', 'weight': '300'},
+];
+var animal = prompt('パンダ、ライオン、キリンの中から好きな動物を入力してください');
+var animal_weight
+for (var a in animals) {
+    if (a == animal) {
+        animal_weight = animals[a].weight
+    }
+}
+alert(animal_weight);
+*/
 
 // 課題8
 function area(radius) {
