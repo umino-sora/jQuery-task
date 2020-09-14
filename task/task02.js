@@ -4,8 +4,8 @@
         $('h2').remove();
         
         // 課題2
-        $('#index').text();
-        $('#index').html();
+        alert($('#index').text());
+        alert($('#index').html());
         
         // 課題3
         $('#index').append("<li>メソッド</li>");
