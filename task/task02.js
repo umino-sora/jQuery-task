@@ -17,8 +17,8 @@
         
         // 課題5
         $('#index').find('li').each(function() {
-            var count = ($(this).text().length + "文字]");
-            $(this).append("[" + count);
+            var count = ($(this).text().length);
+            $(this).append("[" + count + "文字]");
         });
     });
 })(jQuery, window);
